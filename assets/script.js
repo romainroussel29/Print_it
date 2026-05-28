@@ -25,3 +25,13 @@ const right = document.querySelector(".arrow_right");
 right.addEventListener("click", () => {
 	console.log("Flèche droite cliquée");
 });
+
+const dotsContainer = document.querySelector(".dots");
+for (let i = 0; i < slides.length; i++) {
+	const dot = document.createElement("div");
+	dot.classList.add("dot");
+	if (i === 0) {
+		dot.classList.add("dot_selected");
+	}
+	dotsContainer.appendChild(dot);
+}		
